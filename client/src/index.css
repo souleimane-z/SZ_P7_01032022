@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Jost, sans-serif;
+  }
+}
+
+@layer components {
+  .background {
+    @apply bg-primary;
+  }
+  .marge {
+    @apply m-auto mb-10 p-5;
+  }
+  .card {
+    @apply bg-white max-w-5xl min-h-[400px] rounded-[50px] m-auto p-5;
+  }
+  .box {
+    @apply max-w-7xl;
+  }
+  .center {
+    @apply flex justify-center items-center self-center;
+  }
+  .button {
+    @apply bg-secondary rounded-[20px] min-w-[65%] h-[4rem] mb-10 mt-10 shadow-xl;
+  }
+  .myFont {
+    @apply font-jost font-semibold text-[27px] p-3 text-black responsive:text-xl;
+  }
+  .label {
+    @apply myFont pb-0;
+  }
+  .textError {
+    @apply text-secondary italic text-base mb-3;
+  }
+  .input {
+    @apply shadow  rounded-[50px] leading-tight p-2;
+  }
+  .form {
+    @apply m-5  space-y-3 min-w-[65%];
+  }
+  .thumbnail {
+    @apply w-[110px] h-[110px] inline-block relative overflow-hidden rounded-full object-cover responsiveSmall:w-[50px] responsiveSmall:h-[50px];
+  }
+  .radius20 {
+    @apply rounded-[20px];
+  }
+}
