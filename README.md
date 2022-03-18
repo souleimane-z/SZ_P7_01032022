@@ -16,17 +16,17 @@ Une base donnée est nécessaire pour le fonctionnement du site web.
 - lancement : **FRONTEND**
 ```bash
 cd client
-```
->>>ensuite
-```bash
+
+# ensuite
+
 npm start
 ```
 - lancement : **BACKEND**
 ```bash
 cd server
-```
->>>ensuite
-```bash
+
+# ensuite
+
 nodemon server
 ```
 
