@@ -38,7 +38,7 @@ function SignUp() {
   return (
     <div className="background">
       <div className="box marge">
-        <img src={logo_text_white} alt="Groupomania" className="marge" />
+        <img src={logo_text_white} alt="Logo Groupomania" className="marge" />
         <div className="card marge center flex-col">
           <form onSubmit={handleSubmit(onSubmit)} className="form">
             <h1 className="myFont border-2 border-primary bg-grey radius20 center h-[4rem]">
@@ -136,7 +136,7 @@ function SignUp() {
                 <p className="myFont text-lg">
                   Veuillez remplir tous les champs.
                 </p>
-                <button className="button myFont text-white m-auto center bg-green ">
+                <button className="button myFont font-black text-black m-auto center bg-green">
                   Je valide
                 </button>
               </div>

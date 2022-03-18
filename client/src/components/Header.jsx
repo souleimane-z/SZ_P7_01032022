@@ -34,7 +34,7 @@ const Header = () => {
         <img
           src={logo_text_white}
           alt="logo Groupomania"
-          className=" mb-0 mt-0 mr-100 responsive:max-w-[99%] responsive:center responsive:mb-10"
+          className=" mb-0 mt-0 mr-100 responsive:max-w-[99%] responsive:center responsive:mb-10 responsiveXS:pb-5 responsiveXS:pt-3 responsiveXS:w-[80%]]"
         />
         <div className="flex space-x-5 p-1 center border-2 border-secondary radius20 w-fit">
           <div className="flex center">

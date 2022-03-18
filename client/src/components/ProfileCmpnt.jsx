@@ -140,7 +140,7 @@ const ProfileCmpnt = () => {
               onChange={(e) => setProfilePicture(e.target.files[0])}
             ></input>
           </label>
-          <button className="button myFont text-xl text-grey bg-primary hover:text-green">
+          <button className="button myFont text-xl text-grey bg-primary hover:text-black">
             Enregistrer
           </button>
         </form>
@@ -155,21 +155,21 @@ const ProfileCmpnt = () => {
             onChange={(e) => setUsername(e.target.value)}
             required
           ></input>
-          <button className="button myFont text-xl text-grey bg-primary hover:text-green">
+          <button className="button myFont text-xl text-grey bg-primary hover:text-black">
             Enregistrer
           </button>
         </form>
         <div className="border text-secondary w-full"></div>
         <div className="w-[294px] center flex-col">
           <button
-            className="button myFont text-xl text-grey bg-primary hover:text-secondary hover:scale-105 "
+            className="button myFont text-xl text-grey bg-primary hover:text-black hover:scale-105 "
             onClick={handleLogout}
           >
             Déconnexion
           </button>
           <button
             onClick={handleDelete}
-            className="button myFont text-xl text-grey bg-primary mt-0 hover:text-secondary hover:scale-105"
+            className="button myFont text-xl text-grey bg-primary mt-0 hover:text-black hover:scale-105"
           >
             Supprimer le compte
           </button>

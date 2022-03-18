@@ -45,7 +45,7 @@ function Login() {
   return (
     <div className="background">
       <div className="box marge">
-        <img src={logo_text_white} alt="Groupomania" className="marge" />
+        <img src={logo_text_white} alt="Logo Groupomania" className="marge" />
         <div className="card marge center flex-col">
           <form onSubmit={handleSubmit(onSubmit)} className="form">
             <h1 className="myFont border-2 border-primary text-black bg-grey radius20 center">
@@ -81,7 +81,7 @@ function Login() {
               )}
             </div>
             <p className="textError">{errorResponse}</p>
-            <button className="button myFont text-white m-auto center bg-green">
+            <button className="button myFont font-black text-black m-auto center bg-green">
               Connexion
             </button>
             <button className="button myFont center m-auto">
