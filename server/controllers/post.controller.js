@@ -11,11 +11,12 @@ module.exports.postOnePost = (req, res) => {
       : null,
     idUser: req.body.idUser,
   })
-    .then(() =>
-      res.status(201).json({
-        message: 'Post créé',
-      })
-    )
+    .then((response) =>
+    
+    res.status(201).send({
+       data: response.dataValues
+    })
+     )
     .catch((error) => res.status(400).json({ error }));
 };
 
