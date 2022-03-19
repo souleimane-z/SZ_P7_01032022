@@ -15,20 +15,24 @@ Une base donnée est nécessaire pour le fonctionnement du site web.
 
 - lancement : **FRONTEND**
 ```bash
+
 cd client
 
-# ensuite ⟱
+# ensuite 🠗🠗
 
 npm start
+
 ```
 - lancement : **BACKEND**
 ```bash
+
 cd server
 
-# ensuite ⟱
+# ensuite 🠗🠗
 
 nodemon server
+
 ```
 
 ### License
-[souleimane-zeggai](https://openclassrooms.com/fr/members/7x8t82xl6z24)
+[souleimane-zeggai](https://www.facebook.com/souzzy)
