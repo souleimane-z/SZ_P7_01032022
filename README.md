@@ -17,7 +17,7 @@ Une base donnée est nécessaire pour le fonctionnement du site web.
 ```bash
 cd client
 
-# ensuite
+# ensuite ⟱
 
 npm start
 ```
@@ -25,7 +25,7 @@ npm start
 ```bash
 cd server
 
-# ensuite
+# ensuite ⟱
 
 nodemon server
 ```
