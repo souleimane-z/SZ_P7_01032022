@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = { //custom proprieties 
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     colors: {
@@ -16,8 +16,15 @@ module.exports = {
     screens: {
       responsive: { max: '1250px' },
       responsiveSmall: { max: '800px' },
+      responsiveSMedium: { max: '365px' },
       responsiveXS: { max: '330px' },
     },
+    extends: {
+      lineHeight: {
+        'leadingLarge': '30',
+      }
+    }, 
   },
   plugins: [require('@tailwindcss/forms')],
+  
 };

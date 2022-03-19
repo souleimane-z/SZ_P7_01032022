@@ -52,9 +52,10 @@ function Login() {
               Connexion
             </h1>
             <div className="flex flex-col">
-              <label className="label">Email</label>
+              <label htmlFor="email" className="label">Email</label>
               <input
-                className="input italic"
+                id='email'
+                className="input"
                 type="text"
                 {...register('email', {
                   required: 'Un email est obligatoire',
@@ -67,9 +68,10 @@ function Login() {
               )}
             </div>
             <div className="mt-[0px] flex flex-col">
-              <label className="label">Mot de passe</label>
+              <label htmlFor="password" className="label">Mot de passe</label>
               <input
-                className="input italic"
+                id='password'
+                className="input"
                 type="password"
                 {...register('password', {
                   required: 'Un mot de passe est obligatoire',

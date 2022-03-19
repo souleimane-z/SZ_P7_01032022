@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <section className="bg-grey box m-auto p-8 pb-1 radius20 responsiveSmall:p-1">
+      <section className="bg-grey box m-auto p-8 pb-1 radius20 responsiveSmall:p-1 ">
         <FeedGlobal />
       </section>
     </div>

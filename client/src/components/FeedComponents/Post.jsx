@@ -48,13 +48,13 @@ const Post = () => {
               <div className="mb-5 p-5 flex center flex-wrap  border  responsive:flex-wrap responsive:center  responsive:p-0">
                 {item['user.profilePicture'] ? (
                   <img
-                    className="thumbnail w-[100px] h-[100px] m-3 ml-0 responsiveSmall:w-[90px] responsiveSmall:h-[90px]"
+                    className="thumbnail w-[80px] h-[80px] m-3 ml-0  responsiveSmall:w-[50px] responsiveSmall:h-[50px]"
                     src={item['user.profilePicture']}
                     alt="profile"
                   />
                 ) : (
                   <img
-                    className="thumbnail w-[100px] h-[100px] m-0 mr-3 p-0 responsiveSmall:w-[90px] responsiveSmall:h-[90px]"
+                    className="thumbnail w-[80px] h-[80px] m-0 mr-3 p-0 responsiveSmall:w-[50px] responsiveSmall:h-[50px]"
                     src={icon}
                     alt="profile"
                   />
@@ -108,26 +108,26 @@ const Post = () => {
                       <div className="flex p-5   responsive:flex-wrap">
                         {dataItem['user.profilePicture'] ? (
                           <img
-                            className="thumbnail w-[50px] h-[50px] "
+                            className="thumbnail w-[50px] h-[50px] pr-0 mr-0"
                             alt="profil pic"
                             src={dataItem['user.profilePicture']}
                           ></img>
                         ) : (
                           <img
-                            className="thumbnail w-[50px] h-[50px] "
+                            className="thumbnail w-[50px] h-[50px] h-[50px] pr-0 mr-0 "
                             alt="post"
                             src={icon}
                           ></img>
                         )}
                         <div
-                          className=" ml-5 center myFont w-[200px]
+                          className=" m-0 center myFont w-[200px]
                          "
                         >
                           {dataItem['user.username']} :
                         </div>
                       </div>
                       <div className=" flex center responsive:flex-wrap responsive:center responsive:mb-5">
-                        <p className="break-all myFont p-2 w-full border-2 border-primary radius20 shadow-md shadow-primary responsive:w-[280px] ">
+                        <p className=" myFont p-2 w-full border-2 border-primary radius20 shadow-md shadow-primary responsive:w-[50%] ">
                           {dataItem.comment}
                         </p>
                         <div className="ml-5 center ">

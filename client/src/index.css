@@ -27,7 +27,7 @@
     @apply flex justify-center items-center self-center;
   }
   .button {
-    @apply bg-secondary rounded-[20px] min-w-[65%] h-[4rem] mb-10 mt-10 shadow-xl;
+    @apply bg-secondary rounded-[20px] min-w-[65%] h-[4rem] mb-10 mt-10 shadow-xl hover:bg-green ;
   }
   .myFont {
     @apply font-jost font-semibold text-[27px] p-3 text-black responsive:text-xl;
@@ -45,9 +45,20 @@
     @apply m-5  space-y-3 min-w-[65%];
   }
   .thumbnail {
-    @apply w-[110px] h-[110px] inline-block relative overflow-hidden rounded-full object-cover responsiveSmall:w-[50px] responsiveSmall:h-[50px];
+    @apply /*w-[110px] h-[110px]*/ inline-block relative overflow-hidden rounded-full object-cover responsiveSmall:w-[50px] responsiveSmall:h-[50px];
   }
   .radius20 {
     @apply rounded-[20px];
   }
+  .inputAdjust {
+    width: fit-content;
+  }
 }
+/* 
+  body {
+    //overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding:0;
+  
+  } */

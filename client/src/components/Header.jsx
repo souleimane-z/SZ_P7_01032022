@@ -40,18 +40,18 @@ const Header = () => {
           <div className="flex center">
             {userData.profilePicture ? (
               <img
-                className="thumbnail"
+                className="thumbnail w-[70px] h-[70px] m-3 responsiveSmall:h-[50px] responsiveSmall:w-[50px] responsive:m-0"
                 alt="post"
                 src={userData.profilePicture}
               ></img>
             ) : (
-              <img className="thumbnail" alt="post" src={icon}></img>
+              <img className="thumbnail w-[70px] h-[70px] m-3 ml-0 responsiveSmall:h-[50px] responsiveSmall:w-[50px] responsive:m-0"
+                   alt="post" src={icon}></img>
             )}
-
-            <p className="myFont text-white   mr-5">{`${userData.username}`}</p>
+            <p className="myFont text-white m-0">Bonjour {`${userData.username}`}</p>
             <Link to="/profile">
               <FontAwesomeIcon
-                className="text-white cursor-pointer text-3xl hover:scale-110"
+                className="text-white cursor-pointer text-3xl hover:scale-110 ml-0 mr-3 mt-3 mb-3"
                 icon={faCog}
               ></FontAwesomeIcon>
             </Link>

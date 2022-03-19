@@ -47,7 +47,7 @@ const Publish = () => {
         <input
           id='text'
           type="text"
-          className="  myFont center radius20 p-3 leading-tight w-[50%] border-primary m-auto 
+          className="  myFont center inputAdjust radius20 mt-5 p-3 leading-tight w-[70%] border-primary m-auto 
                       responsiveSmall:w-[100%] responsiveSmall:justify-center responsiveSmall:p-0"
           value={content}
           onChange={(e) => setContent(e.target.value)}
@@ -62,7 +62,9 @@ const Publish = () => {
               type="file"
               accept="image/*"
               name="imageUrl"
-              className='responsiveSmall:pl-4 responsiveXS:pl-2 responsiveXS:w-[65%]'
+              className='responsiveSmall:pl-4 mt-3
+                         responsiveXS:pl-2 responsiveXS:w-[65%]
+                         responsiveSMedium:w-[63%]'
               onChange={(e) => setImageUrl(e.target.files[0])}
             />
           </label>

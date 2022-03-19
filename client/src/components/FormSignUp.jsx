@@ -41,15 +41,18 @@ function SignUp() {
         <img src={logo_text_white} alt="Logo Groupomania" className="marge" />
         <div className="card marge center flex-col">
           <form onSubmit={handleSubmit(onSubmit)} className="form">
+
             <h1 className="myFont border-2 border-primary bg-grey radius20 center h-[4rem]">
               Inscription
             </h1>
+
             <div className=" flex flex-col">
-              <label className="label" htmlFor="userName">
+              <label className="label" htmlFor="username">
                 Pseudo
               </label>
               <input
-                className="input italic"
+              id='username'
+                className="input font-bold"
                 type="text"
                 {...register('username', {
                   required:
@@ -65,13 +68,14 @@ function SignUp() {
                 <p className="textError">{errors?.username.message}</p>
               )}
             </div>
+
             <div className="flex flex-col">
               <label className="label" htmlFor="email">
                 Email
               </label>
-
               <input
-                className="input italic"
+                id='email'
+                className="input font-bold"
                 type="email"
                 {...register('email', {
                   required: 'Un email valide est obligatoire',
@@ -88,20 +92,21 @@ function SignUp() {
                 <p className="textError">{errors?.email.message}</p>
               )}
             </div>
+
             <div className="flex flex-col">
               <label className="label" htmlFor="password">
                 Mot de passe
               </label>
-
               <input
-                className="input italic"
+                id='password'
+                className="input font-bold"
                 type="password"
                 {...register('password', {
                   required: 'Un mot de passe est obligatoire',
                   pattern: {
-                    value: /^(?=.*\d).{8,}$/,
+                    value: /^(?=.*\d).{8,15}$/,
                     message:
-                      'Le mot de passe doit contenir 8 caractères minimum et 1 chiffre minimum',
+                      'Le mot de passe doit contenir entre 8 et 15 caractères, et 1 chiffre minimum',
                   },
                 })}
                 placeholder="Mot de passe..."
@@ -110,13 +115,14 @@ function SignUp() {
                 <p className="textError">{errors?.password.message}</p>
               )}
             </div>
+
             <div className="flex flex-col">
-              <label className="label" htmlFor="password">
+              <label className="label" htmlFor="passwordVerification">
                 Confirmer le mot de passe...
               </label>
-
               <input
-                className="input italic"
+                id='passwordVerification'
+                className="input font-bold"
                 type="password"
                 {...register('confirmPassword', {
                   required: 'Le mot de passe ne correspond pas',
