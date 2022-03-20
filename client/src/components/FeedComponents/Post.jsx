@@ -127,7 +127,7 @@ const Post = () => {
                         </div>
                       </div>
                       <div className=" flex center responsive:flex-wrap responsive:center responsive:mb-5">
-                        <p className=" myFont p-2 w-full border-2 border-primary radius20 shadow-md shadow-primary responsive:w-[50%] ">
+                        <p className=" myFont p-2 w-full border-2 border-primary radius20 shadow-md shadow-primary responsive:w-[70%] ">
                           {dataItem.comment}
                         </p>
                         <div className="ml-5 center ">

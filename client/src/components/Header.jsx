@@ -34,7 +34,7 @@ const Header = () => {
         <img
           src={logo_text_white}
           alt="logo Groupomania"
-          className=" mb-0 mt-0 mr-100 responsive:max-w-[99%] responsive:center responsive:mb-10 responsiveXS:pb-5 responsiveXS:pt-3 responsiveXS:w-[80%]]"
+          className=" mb-0 mt-0 mr-100 responsive:max-w-[99%] responsive:center responsive:mb-10 responsiveXS:pb-5 responsive:mt-6 responsiveXS:w-[80%]]"
         />
         <div className="flex space-x-5 p-1 center border-2 border-secondary radius20 w-fit">
           <div className="flex center">
@@ -48,10 +48,10 @@ const Header = () => {
               <img className="thumbnail w-[70px] h-[70px] m-3 ml-0 responsiveSmall:h-[50px] responsiveSmall:w-[50px] responsive:m-0"
                    alt="post" src={icon}></img>
             )}
-            <p className="myFont text-white m-0">Bonjour {`${userData.username}`}</p>
+            <p className="myFont capitalize text-white p-0 m-0">Bonjour: {`${userData.username}`}</p>
             <Link to="/profile">
               <FontAwesomeIcon
-                className="text-white cursor-pointer text-3xl hover:scale-110 ml-0 mr-3 mt-3 mb-3"
+                className="text-white cursor-pointer text-3xl hover:scale-110 ml-3 mr-3 mt-3 mb-3"
                 icon={faCog}
               ></FontAwesomeIcon>
             </Link>

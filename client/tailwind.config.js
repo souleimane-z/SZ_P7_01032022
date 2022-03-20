@@ -12,6 +12,7 @@ module.exports = { //custom proprieties
     },
     fontFamily: {
       jost: ['Jost', 'sans-serif'],
+      err: ['Courier Prime'],
     },
     screens: {
       responsive: { max: '1250px' },

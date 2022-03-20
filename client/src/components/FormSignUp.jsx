@@ -58,8 +58,10 @@ function SignUp() {
                   required:
                     'Un pseudo de moins de 15 caractères est obligatoire',
                   pattern: {
-                    value: /^[a-zA-Z\s0-9]{1,30}$/,
+                    value: /^[a-zA-Z\s0-9]{1,15}$/,
+                    message: `moins de 15 caractères`,
                   },
+                  
                 })}
                 placeholder="Pseudo... "
                 autoComplete="off"
@@ -106,7 +108,7 @@ function SignUp() {
                   pattern: {
                     value: /^(?=.*\d).{8,15}$/,
                     message:
-                      'Le mot de passe doit contenir entre 8 et 15 caractères, et 1 chiffre minimum',
+                      'Entre 8 et 15 caractères avec 1 chiffre minimum',
                   },
                 })}
                 placeholder="Mot de passe..."
