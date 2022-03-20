@@ -15,11 +15,12 @@ module.exports.postOneComment = (req, res) => {
     idPost: req.body.idPost,
     idUser: req.params.id,
   })
-    .then(() =>
-      res.status(201).json({
-        message: 'Commentaire créé',
-      })
-    )
+    .then((response) =>
+    
+    res.status(201).send({
+       data: response.dataValues
+    })
+     )
     .catch((error) => res.status(400).json({ error }));
 };
 

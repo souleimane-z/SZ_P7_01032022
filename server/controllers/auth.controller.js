@@ -10,11 +10,12 @@ module.exports.signup = (req, res) => {
     email: req.body.email,
     password: bcrypt.hashSync(req.body.password, 8),
   })
-    .then(() =>
-      res.status(201).json({
-        message: 'User was registered successfully!',
-      })
-    )
+  .then((response) =>
+    
+  res.status(201).send({
+     data: response.dataValues
+  })
+   )
     .catch((error) => res.status(400).json({ error }));
 };
 
