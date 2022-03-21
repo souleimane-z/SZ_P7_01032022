@@ -17,7 +17,7 @@ Une base donnée est nécessaire pour le fonctionnement du site web.
 
   `./server/config`
 
-#### Comment lancer le projet
+### Comment lancer le projet :
 
 - _lancement_ :  **FRONTEND** _(dans l'ordre)
 ```bash
@@ -41,5 +41,5 @@ nodemon server
 
 ```
 
-##### License
+#### License
 [souleimane-zeggai](https://www.facebook.com/souzzy)
