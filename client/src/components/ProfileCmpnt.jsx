@@ -6,6 +6,12 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import url from '../utils/api';
 
+/*
+  Page de profil
+  L'utilisateur peut : modifier la photo de profil, le nom d'utilisateur et se déconnecter
+*/
+
+
 const ProfileCmpnt = () => {
   const token = localStorage.getItem('Token');
   const [userData, setUserData] = useState('');
@@ -31,7 +37,7 @@ const ProfileCmpnt = () => {
 
   let navigate = useNavigate();
   const handleLogout = () => {
-    localStorage.clear();
+    localStorage.clear(); //Une fois la déconnexion faite, le localstorage se vide
     navigate('/Home');
   };
 
@@ -59,7 +65,7 @@ const ProfileCmpnt = () => {
   // update Image
 
   const [profilePicture, setProfilePicture] = useState(null);
-  const handleModifyImage = () => {
+  const handleModifyImage = () => {      // Fonction qui va nous permettre de modifier l'image
     const formData = new FormData();
     formData.append('imageUrl', profilePicture);
     formData.append('idUser', id);
@@ -86,7 +92,7 @@ const ProfileCmpnt = () => {
     }
   };
 
-  const handleDelete = () => {
+  const handleDelete = () => {    // Fonction pour supprimer le compte
     axios
       .delete(`${url}user/${id}`, {
         headers: {
@@ -106,9 +112,9 @@ const ProfileCmpnt = () => {
   return (
     <section className="bg-grey box m-auto p-8 pb-0 radius20 responsiveSmall:p-1">
       <div className="flex">
-        <Link to="/">
+        <Link to="/">          {/* retour vers le fil d'actualité*/}
           <FontAwesomeIcon
-            className=" cursor-pointer text-3xl hover:scale-110 mb-5"
+            className=" cursor-pointer text-3xl hover:scale-110 mb-5" 
             icon={faArrowLeft}
           ></FontAwesomeIcon>
         </Link>
@@ -130,7 +136,7 @@ const ProfileCmpnt = () => {
             src={icon}
           ></img>
         )}
-        <form onSubmit={handleModifyImage} className="flex flex-col center">
+        <form onSubmit={handleModifyImage} className="flex flex-col center">   {/* Modifier la photo de profile */}
           <label className="center flex-col">
             Ma photo :
             <input

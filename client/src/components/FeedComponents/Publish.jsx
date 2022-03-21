@@ -44,6 +44,7 @@ const Publish = () => {
     <div className="border-2 border-secondary radius20 p-5 flex responsiveSmall:flex-col responsiveSmall:p-3 responsiveSmall:justify-center">
       <form onSubmit={handlePost} method="post" className=" flex-1 flex-col">
         <label htmlFor="text" className='myFont underline decoration-secondary decoration-4 underline-offset-2 '> Publier:</label>
+
         <input
           id='text'
           type="text"
@@ -54,9 +55,11 @@ const Publish = () => {
           required
           placeholder="Partager avec tout le monde.."
         ></input>
+        
         <div className="flex flex-col justify-center mt-3 responsiveSmall:m-0 responsiveSmall:justify-center">
           <label htmlFor="file" className="myFont text-xl center responsive:text-lg flex-col leadingLarge">
             Une image à partager ? 
+
             <input
               id="file"
               type="file"
@@ -67,6 +70,7 @@ const Publish = () => {
                          responsiveSMedium:w-[63%]'
               onChange={(e) => setImageUrl(e.target.files[0])}
             />
+
           </label>
         </div>
         <div className="flex center mt-5">

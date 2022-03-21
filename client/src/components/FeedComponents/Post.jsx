@@ -72,7 +72,7 @@ const Post = () => {
         responsive:w-[95%] responsive:pr-0 responsive:pl-0"
                 >
                   <p
-                    className="text-center text-primary myFont p-0 pb-2 responsive:text-center"
+                    className="text-center text-primary myFont p-0 mb-6 responsive:text-center responsiveSmall:mb-4"
                   >
                     {item.content}
                   </p>

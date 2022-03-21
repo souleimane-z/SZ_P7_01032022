@@ -2,6 +2,13 @@ import logo_text_white from '../images/logo_text_white.svg';
 import error from '../images/error.gif';
 import { Link } from 'react-router-dom';
 
+/* 
+  Si l'url est inconnu alors on tombera sur cette page 
+  qui affiche une image d'erreur 
+  et permet à l'utilisateur de retourner à la page d'acceuil 
+  grâce à un bouton
+*/
+
 function Error() {
   return (
     <div className="background">
@@ -19,4 +26,4 @@ function Error() {
   );
 }
 
-export default Error;
+export default Error;  //exporter code vers le fichier principal : App.js

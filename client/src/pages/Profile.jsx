@@ -5,9 +5,9 @@ const Profile = () => {
   return (
     <div>
       <Header />
-      <ProfileCmpnt />
+      <ProfileCmpnt /> 
     </div>
   );
 };
 
-export default Profile;
+export default Profile;  //exporter code vers le fichier principal : App.js

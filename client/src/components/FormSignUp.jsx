@@ -58,7 +58,9 @@ function SignUp() {
                   required:
                     'Un pseudo de moins de 15 caractères est obligatoire',
                   pattern: {
-                    value: /^[a-zA-Z\s0-9]{1,15}$/,
+                    /* Pattern qui permet de définir les champs renseignés dans l'input, 
+                       si cela ne correspond pas : message d'erreur */
+                    value: /^[a-zA-Z\s0-9]{1,15}$/, 
                     message: `moins de 15 caractères`,
                   },
                   

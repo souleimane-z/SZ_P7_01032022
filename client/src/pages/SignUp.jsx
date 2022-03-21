@@ -4,9 +4,10 @@ import FormSignUp from '../components/FormSignUp';
 const SignUp = () => {
   return (
     <div>
-      <FormSignUp />
+      {/* Formulaire d'inscription */}
+      <FormSignUp />  
     </div>
   );
 };
 
-export default SignUp;
+export default SignUp;  //exporter code vers le fichier principal : App.js

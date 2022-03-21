@@ -6,13 +6,13 @@ const HomePage = () => {
   return (
     <div className="background">
       <div className="box marge">
-        <img src={logo_text_white} alt="Logo Groupomania" className="marge" />
+        <img src={logo_text_white} alt="Logo Groupomania" className="marge" /> {/* Logo groupomania */}
         <div className="card marge center flex-col">
           <button className="button myFont text-black ">
-            <Link to="/SignUp"> Inscription </Link>
+            <Link to="/SignUp"> Inscription </Link> {/* Lien vers notre formulaire d'inscription */}
           </button>
           <button className="button myFont text-black ">
-            <Link to="/Login"> Connexion </Link>
+            <Link to="/Login"> Connexion </Link> {/* Lien vers notre formulaire de connexion */}
           </button>
         </div>
       </div>
@@ -20,4 +20,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomePage;  //exporter code vers le fichier principal : App.js

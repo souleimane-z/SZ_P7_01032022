@@ -19,8 +19,8 @@ const Comment = (props) => {
       )
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
-  };
 
+  };
   const [comment, setComment] = useState('');
 
   return (
