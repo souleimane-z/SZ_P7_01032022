@@ -9,16 +9,17 @@ Un framework frontend JavaScript devait être utilisé, j'ai choisi React.
 
 Pour la partie backend la seule contrainte était d'utilisé MySQL pour la BDD, Sequelize a été choisi pour la mise en place de celle-ci.
 
-### Lancement du projet: 
+### Base de données : 
 
 Une base donnée est nécessaire pour le fonctionnement du site web. 
 
 > Pour ce faire j'ai inclu mon shéma ici: 
 
-`./server/config`
+  `./server/config`
 
+#### Comment lancer le projet
 
-- _lancement_ :  **FRONTEND** (dans l'ordre)
+- _lancement_ :  **FRONTEND** _(dans l'ordre)
 ```bash
 
 cd client
@@ -29,7 +30,7 @@ npm start
 
 ```
 
-- _lancement_ :  **BACKEND** (dans l'ordre)
+- _lancement_ :  **BACKEND** _(dans l'ordre)
 ```bash
 
 cd server
@@ -40,5 +41,5 @@ nodemon server
 
 ```
 
-### License
+##### License
 [souleimane-zeggai](https://www.facebook.com/souzzy)
