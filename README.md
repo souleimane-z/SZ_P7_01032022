@@ -12,9 +12,11 @@ Pour la partie backend la seule contrainte était d'utilisé MySQL pour la BDD, 
 ### Lancement du projet: 
 
 Une base donnée est nécessaire pour le fonctionnement du site web. 
-Pour ce faire j'ai inclu mon shéma ici: `./server/config`
 
-- lancement : **FRONTEND**
+> Pour ce faire j'ai inclu mon shéma ici: 
+`./server/config`
+
+- _lancement_ :_ **FRONTEND**
 ```bash
 
 cd client
@@ -24,7 +26,7 @@ cd client
 npm start
 
 ```
-- lancement : **BACKEND**
+- _lancement :_ **BACKEND**
 ```bash
 
 cd server
