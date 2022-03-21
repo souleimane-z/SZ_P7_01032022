@@ -16,22 +16,22 @@ Une base donnée est nécessaire pour le fonctionnement du site web.
 > Pour ce faire j'ai inclu mon shéma ici: 
 `./server/config`
 
-- _lancement_ :  **FRONTEND**
+- _lancement_ :  **FRONTEND** (dans l'ordre)
 ```bash
 
 cd client
 
-# ensuite 🠗🠗
+npm install
 
 npm start
 
 ```
-- _lancement_ :  **BACKEND**
+- _lancement_ :  **BACKEND** (dans l'ordre)
 ```bash
 
 cd server
 
-# ensuite 🠗🠗
+npm install
 
 nodemon server
 
