@@ -16,7 +16,7 @@ Une base donnée est nécessaire pour le fonctionnement du site web.
 > Pour ce faire j'ai inclu mon shéma ici: 
 `./server/config`
 
-- _lancement_ :_ **FRONTEND**
+- _lancement_ :  **FRONTEND**
 ```bash
 
 cd client
@@ -26,7 +26,7 @@ cd client
 npm start
 
 ```
-- _lancement :_ **BACKEND**
+- _lancement_ :  **BACKEND**
 ```bash
 
 cd server
