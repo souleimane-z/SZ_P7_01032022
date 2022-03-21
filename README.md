@@ -11,7 +11,8 @@ Pour la partie backend la seule contrainte était d'utilisé MySQL pour la BDD, 
 
 ### Lancement du projet: 
 
-Une base donnée est nécessaire pour le fonctionnement du site web.
+Une base donnée est nécessaire pour le fonctionnement du site web. 
+Pour ce faire j'ai inclu mon shéma ici: `./server/config`
 
 - lancement : **FRONTEND**
 ```bash
